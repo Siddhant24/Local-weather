@@ -31,13 +31,15 @@ $(document).ready(function(){
 $(".slider").on("click", function(){
   text = $("#temperature").text();
   newtext = "";
-  if(text.charAt(text.length-1)=='C')
-  {
-    newtext += (parseFloat(text)*9/5 + 32).toFixed(1) + '&#176F';
+  if(text){
+    if(text.charAt(text.length-1)=='C')
+    {
+      newtext += (parseFloat(text)*9/5 + 32).toFixed(1) + '&#176F';
+    }
+    else if(text.charAt(text.length-1)=='F')
+    {
+      newtext += ((parseFloat(text)-32)*5/9).toFixed(1) + '&#176C';
+    }
+    $("#temperature").html(newtext);
   }
-  else if(text.charAt(text.length-1)=='F')
-  {
-    newtext += ((parseFloat(text)-32)*5/9).toFixed(1) + '&#176C';
-  }
-  $("#temperature").html(newtext);
 });
