@@ -39,6 +39,5 @@ $(".slider").on("click", function(){
   {
     newtext += ((parseFloat(text)-32)*5/9).toFixed(1) + '&#176C';
   }
-  console.log(newtext);
   $("#temperature").html(newtext);
 });
