@@ -35,7 +35,7 @@ $(".slider").on("click", function(){
   {
     newtext += (parseFloat(text)*9/5 + 32).toFixed(1) + '&#176F';
   }
-  else
+  else if(text.charAt(text.length-1)=='F')
   {
     newtext += ((parseFloat(text)-32)*5/9).toFixed(1) + '&#176C';
   }
