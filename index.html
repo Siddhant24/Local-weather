@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Local Weather</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="container-fluid bg-success">
+<div class="title">
+  <h1 class="text-center">Local Weather</h1>
+</div>
+<div class="weather">
+  <span>
+    Weather today at <span id="location-type">your location</span> is
+  </span>
+  <span id="weather-type"></span><img id="weather-icon" src=""><br>
+  <span class="temperature">Temperature is <span id="temperature"></span></span><br><br>
+  <div class="temperature-units">&#176C
+    <!-- Rounded switch -->
+    <label class="switch">
+    <input type="checkbox">
+    <div class="slider round"></div>
+    </label>&#176F
+  </div>
+</div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
