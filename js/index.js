@@ -22,6 +22,9 @@ $(document).ready(function(){
       $("#weather-type").html(weather_description);
       $("#weather-icon").prop("src",`https://www.metaweather.com//static/img/weather/png/64/${abbr}.png`);
       $("#temperature").html(temperature.toFixed(1) + '&#176C');
+      if(document.getElementById("checkbox").checked){
+        document.getElementById("checkbox").click();
+      }
     });
    });
  });
